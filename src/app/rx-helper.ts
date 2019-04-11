@@ -1,0 +1,38 @@
+import * as NodeTypes from './node-types';
+import { RxNode } from './node-types/rxNode';
+
+interface OperatorsKind {
+  link: string;
+  name: string;
+  desc: string;
+  list: Array<any>;
+}
+
+export class RxHelper {
+  public static operators: Array<OperatorsKind> = [
+    {
+      link: 'creation',
+      name: 'Creating Observables',
+      desc: 'Operators that originate new Observables.',
+      list: [
+        NodeTypes.BatchSpout,
+        NodeTypes.FunctionBolt,
+        NodeTypes.GroupByBolt,
+        NodeTypes.JoinBolt,
+        NodeTypes.MergeBolt,
+        NodeTypes.Subscribe
+      ]
+    },
+  ];
+  public static getRxOperators() {
+    return this.operators;
+  }
+  public static getOperatorLink(operatorName) {
+    const cate = this.operators.find((cat: any) => {
+      return cat.list.find((nodeType: RxNode) => operatorName === nodeType.title);
+    });
+    return 'https://www.learnrxjs.io/operators/' + cate.link + '/' + operatorName.toLowerCase() + '.html';
+  }
+  constructor() {
+  }
+}

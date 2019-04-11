@@ -1,0 +1,56 @@
+@import '../../common';
+:host{
+
+  border-top: 1px solid #f1f1f1;
+  padding: 1.6rem;
+
+  .notSelected{
+    color:#666;
+    margin:0;
+    text-align:center;
+  }
+
+  button.remove{
+    border: none;
+    background: none;
+    border-radius: 50%;
+    padding: .5rem;
+    width: 2.5rem;
+    float: right;
+    color: $primaryColor;
+    outline: none;
+    transition: padding 0.3s ease;
+    &:hover{
+      padding: 0;
+    }
+  }
+
+  p{
+    font-size: 13px;
+    color: #444;
+    margin: 0 0 1rem;
+    max-width: 300px;
+  }
+  a{
+    text-decoration: underline;
+    color: darken($primaryColor, 30%);
+    cursor: pointer;
+  }
+  .codeGenerated{
+    padding: 10px;
+    color: #555;
+    font-weight: bold;
+    font-size: 0.9rem;
+    overflow: auto;
+  }
+  .navigate{
+    display: inline-flex;
+    vertical-align: middle;
+    *{
+      line-height: 1rem;
+    }
+  }
+  .arrow-right{
+    padding: 0 0.6rem;
+  }
+}

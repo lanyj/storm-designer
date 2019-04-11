@@ -1,0 +1,110 @@
+@import "../../common";
+
+$hoveredLink: lighten($primaryColor, 20%);
+
+$selectedColor: lighten($primaryColor, 20%);
+$selectedLink: lighten($primaryColor, 10%);
+$selectedBorder: lighten($primaryColor, 50%);
+:host{
+  position: relative;
+
+  /deep/ svg {
+    .conceptG text {
+      pointer-events: none;
+    }
+
+    .resultItems{
+      circle{
+        fill: $primaryColor;
+      }
+      text{
+        fill:white;
+      }
+    }
+
+    marker {
+      fill: $linkColor;
+    }
+    g.conceptG {
+      cursor:pointer;
+      circle {
+        transition:fill 0.3s ease;
+        fill: #fff;
+        &:hover {
+          fill: $outerCircleHoverColor;
+        }
+        &.outerCircle{
+          transition:all 0.3s ease;
+          stroke-width: 1px;
+          stroke: $nodeBorderColor;
+          &:hover{
+            fill:$outerCircleHoverColor;
+            stroke: $outerCircleHoverColor;
+          }
+        }
+      }
+      text {
+        fill:$nodeBorderColor;
+      }
+      &:hover {
+
+      }
+      &.selected {
+        circle {
+          transition:fill 0.3s ease;
+          fill: $selectedColor;
+          &.outerCircle {
+            stroke: $selectedColor;
+            &:hover {
+              fill: darken($selectedColor, 7%);
+            }
+          }
+        }
+        text {
+          fill:#fff;
+        }
+      }
+    }
+    g.connect-node circle {
+      transition:fill 0.3s ease;
+      fill: $outerCircleHoverColor;
+    }
+
+    path.link {
+      fill: none;
+      cursor:pointer;
+      stroke: $linkColor;
+      stroke-width: 6px;
+    }
+
+    path.link:hover {
+      stroke: $hoveredLink;
+    }
+
+    path.link.hidden {
+      stroke-width: 0;
+    }
+
+    path.link.selected {
+      stroke: $selectedLink;
+    }
+
+    path.link.suggested {
+      stroke: #33ff009e;
+      stroke-dasharray: 10,2;
+      stroke-dashoffset: 0;
+      animation-name: dashofset;
+      animation-duration: 0.5s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+    }
+    @keyframes dashofset {
+      from {stroke-dashoffset: 0;}
+      to {stroke-dashoffset: -12;}
+    }
+    path.link.suggestDel {
+      stroke: #c005;
+    }
+  }
+}
+
