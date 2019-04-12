@@ -21,7 +21,7 @@ export class HeaderComponent implements OnInit {
   }
   share() {
     const serialized = this.sceneComponent.serialize();
-    this.serializedUrl = 'localhost:4200/load/' + this.shortenURL(serialized);
+    this.serializedUrl = 'https://lanyj.github.io/storm-designer/load/' + this.shortenURL(serialized);
   }
   download() {
     const baseUrl = 'https://www.lanyj.cn/StormDesignerServer/';
