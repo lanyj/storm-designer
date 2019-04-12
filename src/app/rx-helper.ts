@@ -28,10 +28,10 @@ export class RxHelper {
     return this.operators;
   }
   public static getOperatorLink(operatorName) {
-    const cate = this.operators.find((cat: any) => {
-      return cat.list.find((nodeType: RxNode) => operatorName === nodeType.title);
-    });
-    return 'https://www.learnrxjs.io/operators/' + cate.link + '/' + operatorName.toLowerCase() + '.html';
+    // const cate = this.operators.find((cat: any) => {
+    //   return cat.list.find((nodeType: RxNode) => operatorName === nodeType.title);
+    // });
+    return 'http://storm.apache.org/releases/1.0.6/Trident-API-Overview.html';
   }
   constructor() {
   }

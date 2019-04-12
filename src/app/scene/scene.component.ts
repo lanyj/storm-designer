@@ -1,6 +1,6 @@
-import {Component, OnInit, ElementRef, Renderer} from '@angular/core';
-import {GraphCreator} from './graph-creator';
-import {AppService} from '../app.service';
+import { Component, OnInit, ElementRef, Renderer } from '@angular/core';
+import { GraphCreator } from './graph-creator';
+import { AppService } from '../app.service';
 // declare var d3: any;
 import * as d3 from 'd3';
 
@@ -33,22 +33,20 @@ export class SceneComponent implements OnInit {
       try {
         this.graphEditor = new GraphCreator(svg, this.appService);
       } catch (err) {
-        console.error('error in creating graph editor : ' , err);
+        console.error('error in creating graph editor : ', err);
       }
       this.graphEditor.updateGraph();
 
       // listen for resize
       const thisComponent = this;
 
-      window.onresize = function(){
+      window.onresize = function () {
         thisComponent.graphEditor.updateWindow(el.clientWidth, el.clientHeight);
       };
     });
   }
 
   deserialize(data) {
-    console.log(data);
-
     setTimeout(() => {
       this.graphEditor.deserialize(data);
       this.appService.refreshRxObjects();
@@ -56,7 +54,6 @@ export class SceneComponent implements OnInit {
   }
   serialize(): string {
     let str = this.graphEditor.serialize();
-    console.log(str);
     return str;
   }
 

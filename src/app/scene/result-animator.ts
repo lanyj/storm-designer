@@ -1,6 +1,6 @@
-import {ResultPath} from './result-path';
-import {Result} from './result';
-import {Subject} from 'rxjs/Subject';
+import { ResultPath } from './result-path';
+import { Result } from './result';
+import { Subject } from 'rxjs/Subject';
 
 class ResultAnimator {
   resultPathArray: Array<ResultPath>;
@@ -12,7 +12,7 @@ class ResultAnimator {
     this.reset();
   }
 
-  add (res: Result) {
+  add(res: Result) {
     res.lastTicks = 0;
     const matchedNumInfo = this.resultPathArray.find(resPath => (resPath.id === res.numberInfo.id));
     if (matchedNumInfo) {
@@ -41,8 +41,9 @@ class ResultAnimator {
       return result.hasFinished() && acc;
     }, true);
     if (hasFinished) {
-      this.hasFinished.next({finished: true});
+      this.hasFinished.next({ finished: true });
     }
+//    this.resultPathArray = this.resultPathArray.filter(rp => !rp.hasFinished());
   }
 
   stop() {

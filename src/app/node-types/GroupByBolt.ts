@@ -23,7 +23,7 @@ export class GroupByBolt extends RxNode {
   ], '');
 
   public properties = {
-    type: SampleFunctions.GroupByFields,
+    type: 0,
     fields: ''
   };
   public graphInputs = [];
@@ -36,6 +36,6 @@ export class GroupByBolt extends RxNode {
     }));
   }
   public toString = () => {
-    return `.groupBy(fields: [${this.properties.fields}], type: ${this.properties.type.name})`;
+    return `.groupBy(fields: [${this.properties.fields}], type: ${this.propertiesType.params[0].params[this.properties.type].name})`;
   }
 }

@@ -52,11 +52,7 @@ export class RxNode implements Operator {
       if (!x.hasOwnProperty("__number_info")) {
         xx = <NumberInfo>{ __number_info: true, x: x.x, id: RxNode.cntr++, data: x.fields };
       } else {
-        xx = JSON.parse(JSON.stringify(x)); // cloned to save x during the result animation
-        // if (node.data.title === 'Share' && (<NumberInfo>x).shared > 1) {
-        //   xx.id = RxNode.cntr++;
-        //   timeoutStep = level;
-        // }
+        xx = JSON.parse(JSON.stringify(x));
         if (node.data.title === 'JoinBolt') {
           xx.id = RxNode.cntr++;
           timeoutStep = level;

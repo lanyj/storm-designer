@@ -479,7 +479,6 @@ export class GraphCreator {
           y: xycoords[1],
           node_type: ''
         };
-        console.log(d, this.idct);
       this.nodes.push(d);
       this.updateGraph();
       this.appService.refreshRxObjects();

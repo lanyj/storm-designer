@@ -1,7 +1,7 @@
 <div class="header">
   <button (click)="download()" title="download">Download</button>
   <button (click)="share()"  title="share">Share</button>
-  <a href="https://github.com/fingerpich/rx-visualization#visualizing-examples" class="examples">Examples</a>
+  <a href="https://github.com/lanyj/storm-designer#visualizing-examples" class="examples">Examples</a>
   <div class="overlay" *ngIf="serializedUrl" (click)="serializedUrl='';">
     <div class="shareBox" (click)="$event.stopPropagation();">
       <div class="shareBoxContainer">
@@ -10,7 +10,7 @@
           <input #inputTarget (click)="inputTarget.select()" [value]="serializedUrl">
           <button [ngxClipboard]="inputTarget">copy</button>
         </div>
-        <div class="prhint"><small>If you find your visualization useful, <a href="https://github.com/fingerpich/rx-visualization/pulls">create a pull request</a> and add the link into the README.md</small></div>
+        <div class="prhint"><small>If you find your visualization useful, <a href="https://github.com/lanyj/storm-designer/pulls">create a pull request</a> and add the link into the README.md</small></div>
       </div>
     </div>
   </div>

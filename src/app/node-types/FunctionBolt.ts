@@ -24,7 +24,7 @@ export class FunctionBolt extends RxNode {
 
   public properties = {
     name: '',
-    functionType: SampleFunctions.EACH,
+    functionType: 0,
     inputFields: '',
     outputFields: ''
   };
@@ -44,6 +44,6 @@ export class FunctionBolt extends RxNode {
     }));
   }
   public toString = () => {
-    return `.${this.properties.functionType.name}(inputFields: [${this.properties.inputFields}], outputFields: [${this.properties.outputFields}])`;
+    return `.${this.propertiesType.params[1].params[this.properties.functionType].name}(inputFields: [${this.properties.inputFields}], outputFields: [${this.properties.outputFields}])`;
   }
 }
