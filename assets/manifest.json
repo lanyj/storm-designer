@@ -1,0 +1,16 @@
+{
+  "name": "storm-designer",
+  "short_name": "RX-Vis",
+  "theme_color": "#333355",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "scope": "/",
+  "start_url": "/storm-designer/",
+  "icons": [
+    {
+      "src": "assets/favicons/favicon.ico",
+      "sizes": "16x16",
+      "type": "image/png"
+    }
+  ]
+}

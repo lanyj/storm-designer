@@ -1,0 +1,60 @@
+{
+  "configVersion": 1,
+  "timestamp": 1555055144572,
+  "index": "https://lanyj.github.io/storm-designer/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "urls": [
+        "https://lanyj.github.io/storm-designer/favicon.ico",
+        "https://lanyj.github.io/storm-designer/index.html",
+        "https://lanyj.github.io/storm-designer/main.75938a9c666eb617fa36.js",
+        "https://lanyj.github.io/storm-designer/polyfills.7e3c03cf445d31c010c7.js",
+        "https://lanyj.github.io/storm-designer/runtime.26209474bfa8dc87a77c.js",
+        "https://lanyj.github.io/storm-designer/styles.9d44f5d653fc378d0ae5.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "urls": [
+        "https://lanyj.github.io/storm-designer/assets/favicons/favicon.ico",
+        "https://lanyj.github.io/storm-designer/assets/manifest.json"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "https://lanyj.github.io/storm-designer/assets/favicons/favicon.ico": "921be4c1574ec63a21925de933a3192d8369e805",
+    "https://lanyj.github.io/storm-designer/assets/manifest.json": "c1c5e429830e96bb8cc589afe7a43a7b6133446c",
+    "https://lanyj.github.io/storm-designer/favicon.ico": "e61a63d1d0c13e83a18cbe24a1603a4b37f28bfd",
+    "https://lanyj.github.io/storm-designer/index.html": "99b1701ce4ffcbce58be957a11b85c5fac16c542",
+    "https://lanyj.github.io/storm-designer/main.75938a9c666eb617fa36.js": "1d25067dc1e775cd1b5f30bc4b1983cb3756ca34",
+    "https://lanyj.github.io/storm-designer/polyfills.7e3c03cf445d31c010c7.js": "65220e6d8ba58b1265a9e0169dca90ea20c60219",
+    "https://lanyj.github.io/storm-designer/runtime.26209474bfa8dc87a77c.js": "b62956c2192bfe5516d6374e753773901ed50ec5",
+    "https://lanyj.github.io/storm-designer/styles.9d44f5d653fc378d0ae5.css": "6e375c9fa66a2a7a1f519b7d28e748048a21b86f"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ]
+}
