@@ -9,3 +9,5 @@ export * from './FunctionBolt';
 export * from './GroupByBolt';
 export * from './JoinBolt';
 export * from './MergeBolt';
+export * from './NewValuesStream';
+export * from './PersistentAggregate';

@@ -13,7 +13,7 @@ export class GroupByBolt extends RxNode {
 
   protected static propertiesType = new PropertyType('config', PropertyTypeEnum.Object, [
     new PropertyType('type', PropertyTypeEnum.Method, [
-      // SampleFunctions.GroupByFields,
+      SampleFunctions.GroupByFields,
       SampleFunctions.GroupByShuffle,
       SampleFunctions.GroupByLocalOrShuffle,
       SampleFunctions.GroupByGlobal,

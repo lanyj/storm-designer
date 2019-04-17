@@ -20,7 +20,9 @@ export class RxHelper {
         NodeTypes.GroupByBolt,
         NodeTypes.JoinBolt,
         NodeTypes.MergeBolt,
-        NodeTypes.Subscribe
+        NodeTypes.Subscribe,
+        NodeTypes.NewValuesStream,
+        NodeTypes.PersistentAggregate
       ]
     },
   ];

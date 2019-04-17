@@ -26,6 +26,6 @@ export class SampleFunctions {
   public static GroupByBatchGlobal = new SampleFunction('batchGlobal', (x) => x, 'batchGlobal group');
   public static GroupByShuffle = new SampleFunction('shuffle', (x) => x, 'shuffle group');
   public static GroupByLocalOrShuffle = new SampleFunction('localOrShuffle', (x) => x, 'localOrShuffle group');
-  // public static GroupByFields = new SampleFunction('groupBy', (x) => x, 'group by fields group');
+  public static GroupByFields = new SampleFunction('groupBy', (x) => x, 'group by fields group');
 
 }
