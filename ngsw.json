@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1555499678285,
+  "timestamp": 1556595670766,
   "index": "https://lanyj.github.io/storm-designer/index.html",
   "assetGroups": [
     {
@@ -10,7 +10,7 @@
       "urls": [
         "https://lanyj.github.io/storm-designer/favicon.ico",
         "https://lanyj.github.io/storm-designer/index.html",
-        "https://lanyj.github.io/storm-designer/main.1e47751892f0d2e79ec7.js",
+        "https://lanyj.github.io/storm-designer/main.0e3e0b49576a342d3ccc.js",
         "https://lanyj.github.io/storm-designer/polyfills.7e3c03cf445d31c010c7.js",
         "https://lanyj.github.io/storm-designer/runtime.26209474bfa8dc87a77c.js",
         "https://lanyj.github.io/storm-designer/styles.9d44f5d653fc378d0ae5.css"
@@ -33,8 +33,8 @@
     "https://lanyj.github.io/storm-designer/assets/favicons/favicon.ico": "921be4c1574ec63a21925de933a3192d8369e805",
     "https://lanyj.github.io/storm-designer/assets/manifest.json": "c1c5e429830e96bb8cc589afe7a43a7b6133446c",
     "https://lanyj.github.io/storm-designer/favicon.ico": "e61a63d1d0c13e83a18cbe24a1603a4b37f28bfd",
-    "https://lanyj.github.io/storm-designer/index.html": "78ad9596814f912b06346a4860c1ac714b118495",
-    "https://lanyj.github.io/storm-designer/main.1e47751892f0d2e79ec7.js": "4b05ff8bef1db378118ef2903d9ce6ba7060b7f4",
+    "https://lanyj.github.io/storm-designer/index.html": "4a5cfb9007d4944d031a69f701f1a95526846f6c",
+    "https://lanyj.github.io/storm-designer/main.0e3e0b49576a342d3ccc.js": "f55e8c56a54ad785b48c337edd09e8bcdd3d0881",
     "https://lanyj.github.io/storm-designer/polyfills.7e3c03cf445d31c010c7.js": "65220e6d8ba58b1265a9e0169dca90ea20c60219",
     "https://lanyj.github.io/storm-designer/runtime.26209474bfa8dc87a77c.js": "b62956c2192bfe5516d6374e753773901ed50ec5",
     "https://lanyj.github.io/storm-designer/styles.9d44f5d653fc378d0ae5.css": "6e375c9fa66a2a7a1f519b7d28e748048a21b86f"
