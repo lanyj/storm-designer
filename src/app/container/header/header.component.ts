@@ -10,7 +10,7 @@ import { AppService } from 'src/app/app.service';
 })
 export class HeaderComponent implements OnInit {
   serializedUrl;
-  private preFlower = false;
+  preFlower = false;
 
   @Input() sceneComponent: SceneComponent;
   constructor(private http: HttpClient, private service: AppService) { }
