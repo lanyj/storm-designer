@@ -1,6 +1,7 @@
 import { HttpClient, HttpUrlEncodingCodec, HttpHeaders } from '@angular/common/http';
 import { Component, Input, OnInit } from '@angular/core';
 import { SceneComponent } from '../../scene/scene.component';
+import { AppService } from 'src/app/app.service';
 
 @Component({
   selector: 'app-header',
@@ -9,11 +10,18 @@ import { SceneComponent } from '../../scene/scene.component';
 })
 export class HeaderComponent implements OnInit {
   serializedUrl;
+  private preFlower = false;
 
   @Input() sceneComponent: SceneComponent;
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient, private service: AppService) { }
 
   ngOnInit() {
+  }
+
+  changeFlower() {
+    this.preFlower = !this.preFlower;
+    this.service.setShowFlower(this.preFlower);
+    this.service.refreshRxObjects();
   }
 
   shortenURL(serialized) {

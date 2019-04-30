@@ -32,16 +32,16 @@ export class FunctionBolt extends RxNode {
   public graphInputs = [];
 
   public runner = () => {
-    let inputFields = this.stringSplitToArray(this.properties.inputFields);
-    let outputFields = this.stringSplitToArray(this.properties.outputFields);
-    return this.graphInputs[0].observable.pipe(map((x: NumberInfo) => {
-      this.checkInputField(inputFields, x.data);
+let inputFields = this.stringSplitToArray(this.properties.inputFields);
+let outputFields = this.stringSplitToArray(this.properties.outputFields);
+return this.graphInputs[0].observable.pipe(map((x: NumberInfo) => {
+  this.checkInputField(inputFields, x.data);
 
-      outputFields.forEach(v => {
-        this.addFieldsToArray(outputFields, x.data);
-      })
-      return x;
-    }));
+  outputFields.forEach(v => {
+    this.addFieldsToArray(outputFields, x.data);
+  })
+  return x;
+}));
   }
   public toString = () => {
     return `.${this.propertiesType.params[1].params[this.properties.functionType].name}(inputFields: [${this.properties.inputFields}], outputFields: [${this.properties.outputFields}])`;

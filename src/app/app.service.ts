@@ -22,10 +22,20 @@ export class AppService {
 
   public removeItemSubject;
 
+  private showFlower: Boolean = false;
+
   constructor() {
     this.selectItemSubject = new Subject();
     this.removeItemSubject = new Subject();
     this.controlSubject = new Subject();
+  }
+
+  public getShowFlower(): Boolean {
+    return this.showFlower;
+  }
+
+  public setShowFlower(b: Boolean) {
+    this.showFlower = b;
   }
 
   public setCreationOption(selectedCreation) {
@@ -92,6 +102,10 @@ export class AppService {
 
     resultAnimator.reset();
     resultAnimator.start(this.delay);
+
+    if (!this.showFlower) {
+      return;
+    }
 
     let levelcounter = 1;
     // Make Creator Observables

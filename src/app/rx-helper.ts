@@ -12,7 +12,7 @@ export class RxHelper {
   public static operators: Array<OperatorsKind> = [
     {
       link: 'creation',
-      name: 'Creating Observables',
+      name: 'Creating Storm Topology',
       desc: 'Operators that originate new Observables.',
       list: [
         NodeTypes.BatchSpout,
@@ -20,9 +20,9 @@ export class RxHelper {
         NodeTypes.GroupByBolt,
         NodeTypes.JoinBolt,
         NodeTypes.MergeBolt,
-        NodeTypes.Subscribe,
+        NodeTypes.PersistentAggregate,
         NodeTypes.NewValuesStream,
-        NodeTypes.PersistentAggregate
+        NodeTypes.Subscribe
       ]
     },
   ];
