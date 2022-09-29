@@ -23,7 +23,7 @@
     "@angular/platform-browser-dynamic": "^7.2.12",
     "@angular/router": "^7.2.12",
     "core-js": "^2.6.5",
-    "d3": "^5.9.2",
+    "d3": "^7.6.1",
     "ng5-slider": "^1.1.14",
     "ngx-clipboard": "^11.1.9",
     "rxjs": "^6.4.0",
